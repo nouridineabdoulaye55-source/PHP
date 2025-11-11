@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>insciption</title>
+    <style>
+      body {
+        padding: 10px 10px;
+        display: flex;
+        flex-direction: column;
+        background-image: url("image/L1 - Copie.jpg"); /* chemin vers ton image */
+        background-size: cover; /* couvre tout l'écran */
+        background-repeat: no-repeat; /* pas de répétition */
+        background-attachment: fixed; /* effet de parallaxe (optionnel) */
+        font-family: Arial, sans-serif;
+        margin: 50px;
+      }
+      li {
+        color: white;
+        font-size: large;
+      }
+      ul {
+        gap: 20px;
+
+        display: flex;
+      }
+      h2 {
+        color: blue;
+        margin-left: 54%;
+      }
+      form {
+        margin-left: 50%;
+        border: 2px solid #4caf50; /* couleur de la bordure */
+        border-radius: 10px; /* coins arrondis */
+        padding: 20px; /* espace intérieur */
+        width: 300px; /* largeur du formulaire */
+        /* centrer horizontalement */
+        background-color: violet; /* fond du formulaire */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* ombre douce */
+      }
+      input,
+      label {
+        width: 300px;
+        border-radius: 4px;
+      }
+      nav {
+        margin-top: 0;
+        display: flex;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        padding: 8px 8px;
+        background-color: wheat;
+        border-radius: 10px;
+        width: 100%;
+      }
+      h1 {
+        font-weight: bold;
+        font-family: cursive;
+      }
+      p {
+        font-size: large;
+        font-family: cursive;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="">s'inscrire</a></li>
+        <li><a href="">home</a></li>
+      </ul>
+    </nav>
+    <div>
+      <h1>bievenue chez Docteur nour</h1>
+      <p>
+        j'ai les solutions sur plusieurs maladies <br />
+        en quoi puis-je vous aider
+      </p>
+    </div>
+    <h2>Créer un compte</h2>
+    <form action="L.php" method="POST">
+      <label>Prénom :</label><br />
+      <input type="text" name="prenom" required /><br /><br />
+
+      <label>Nom :</label><br />
+      <input type="text" name="nom" required /><br /><br />
+
+      <label>Email :</label><br />
+      <input type="email" name="email" required /><br /><br />
+
+      <label>Mot de passe :</label><br />
+      <input type="password" name="password" required /><br /><br />
+
+      <input type="submit" value="S'inscrire" />
+    </form>
+  </body>
+</html>
